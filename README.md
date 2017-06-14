@@ -11,11 +11,25 @@ framework and [canihaz](https://www.npmjs.com/package/canihaz).
 
 ## Usage
 
-`gimie`
-`gimie ip`
-`gimie weather`
-`gimie ip memory weather`
-`gimie {your_gimie_target_here}`
+```
+gimie
+```
+
+```
+gimie ip
+```
+
+```
+gimie weather
+```
+
+```
+gimie ip memory weather
+```
+
+```
+gimie {your_gimie_target_here!}
+```
 
 ## Authoring Targets
 
