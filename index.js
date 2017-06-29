@@ -8,7 +8,10 @@ const Promise = require('bluebird');
 const npmKeyword = require('npm-keyword');
 
 function Gimie() {
-    const gTargets = _.map(argv._, (target) => `gimie.${target.split('.').shift()}`);
+    const gTargets = _.reduce(argv._, (acc, target) => {
+        acc = acc.concat(target.split(',').map((t) => `gimie.${t.split('.').shift()}`));
+        return acc;
+    }, []);
 
     function handleGimieTargets(gimieTargets) {
         const targetPromiseMap = Promise.reduce(gimieTargets, (acc, target) => {
