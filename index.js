@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const Targets = require('targets');
-const canihaz = require('canihaz')();
+const canihaz = require('canihaz-nosave')();
 const argv = require('minimist')(process.argv.slice(2));
 const _ = require('lodash');
 const Promise = require('bluebird');
